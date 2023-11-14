@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <video
+      id="background-video"
+      class="w-screen h-2/3 object-cover absolute left-0 right-0 top-0 bottom-0 -z-10"
+      autoplay
+      loop
+      muted
+      poster="images/desktop/snapshot.jpg"
+    >
+      <source src="images/kitchen.webm" type="video/webm" />
+    </video>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Hero Container -->
+      <div class="container max-w-6xl mx-auto px-6 py-12">
+        <!-- Menu/Logo Container -->
+        <nav class="flex items-center justify-between font-bold text-amber-300">
+          <!-- Logo -->
+          <img src="images/logo-lm.png" alt="" class="h-16" />
+          <!-- Menu -->
+          <div class="hidden h-10 font-alata md:flex md:space-x-8">
+            <div class="group">
+              <a href="#sonho">Inspirações</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-amber-300"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#projetos">Empreendimentos</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-amber-300"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#testemunhos">Vozes</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-amber-300"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#onde-estamos">Mapa dos Sonhos</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-amber-300"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#contato">Contato</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-amber-300"
+              ></div>
+            </div>
+          </div>
+          <!-- Hamburger Button -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+        >
+          <a href="#sonho" class="hover:text-amber-300">Inspirações</a>
+          <a href="#projetos" class="hover:text-amber-300">Empreendimentos</a>
+          <a href="#testemunhos" class="hover:text-amber-300">Vozes</a>
+          <a href="#onde-estamos" class="hover:text-amber-300"
+            >Mapa dos Sonhos</a
+          >
+          <a href="#contato" class="hover:text-amber-300">Contato</a>
+        </div>
+
+        <div
+          class="text-amber-300 max-w-lg mt-32 mb-32 p-4 font-sans text-4xl uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl"
+        >
+          Idealizar, projetar, construir
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="sonho">
+      <!-- Feature Container -->
+      <div
+        class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0"
+      >
+        <!-- Image -->
+        <!-- <img src="images/kitchen_color.jpg" alt="" class="w-3/5" /> -->
+        <div
+          class="m-0 md:h-full md:w-3/5 flex justify-center items-center w-full"
+        >
+          <div
+            class="container_slider h-[300px] w-full md:h-[600px] md:w-[900px]"
+          >
+            <!-- [length:900px_100%] -->
+            <div
+              class="absolute top-0 left-0 w-full h-full bg-cover background-img"
+            ></div>
+            <div
+              class="absolute top-0 left-0 w-full h-full bg-cover foreground-img"
+            ></div>
+
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="absolute appearance-none w-full h-full bg-white/[.1] hover:bg-white/[.05] outline-none m-0 duration-200 flex justify-center items-center"
+              name="slider"
+              id="slider"
+            />
+            <div class="slider-button"></div>
+          </div>
+        </div>
+        <!-- Text Container -->
+        <div
+          class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
+        >
+          <h2
+            class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left"
+          >
+            Torn&aacute;mos o sonho realidade
+          </h2>
+
+          <p class="max-w-md text-center md:text-left">
+            Fundado em 2008, estamos empenhados em concretizar seus sonhos.
+            Compartilhe suas aspirações, e dedicaremos esforços para
+            transformá-las em uma realidade única. Ao longo dessa jornada
+            colaborativa, buscamos superar expectativas, criando experiências
+            excepcionais. Conte conosco para moldar e realizar suas ideias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creations Section -->
+    <section id="projetos">
+      <!-- Creations Container -->
+      <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+        <!-- Creations Header -->
+        <div class="flex justify-center mb-20 md:justify-between">
+          <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+            projetos
+          </h2>
+
+          <a href="#creations" class="hidden btn md:block">Ver todos</a>
+        </div>
+
+        <!-- Items Container -->
+        <div class="item-container">
+          <!-- Item 1 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/dining_table-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/dining_table-mobile.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Gastronômica Elegância</h5>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/double_bed-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/double_bed-mobile.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Altos Sonhos</h5>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/full_kitchen-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/full_kitchen-mobile.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Culinária Completa</h5>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/kitchen-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/kitchen-mobile.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Estação Gourmet</h5>
+          </div>
+        </div>
+
+        <!-- Item Container 2 -->
+        <div class="item-container mt-10">
+          <!-- Item 1 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/room-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/room-moblie.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Organização Estilizada</h5>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/single_room-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/single_room-mobile.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Refúgio Aconchegante</h5>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/stairs-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/stairs-mobile.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Ascensão Serena</h5>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="group item">
+            <!-- Desktop Image -->
+            <img
+              src="images/desktop/toilet-min.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110 h-full bg-cover"
+            />
+            <!-- Mobile Image -->
+            <img
+              src="images/mobile/toilet-mobile.jpg"
+              alt=""
+              class="w-full md:hidden h-40 bg-cover"
+            />
+            <!-- Item Gradient -->
+            <div class="item-gradient"></div>
+            <!-- Item Text -->
+            <h5>Arrumação Relaxante</h5>
+          </div>
+        </div>
+        <!-- Bottom Button Container -->
+        <div class="flex justify-center mt-10 md:hidden">
+          <button class="btn w-full md:hidden">See All</button>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section
+      id="testemunhos"
+      class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0 text-center"
+    >
+      <h2
+        class="justify-center mb-20 text-4xl text-center uppercase md:text-left md:text-5xl"
+      >
+        testemunhos
+      </h2>
+
+      <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+        <div class="mb-12 md:mb-0">
+          <div class="mb-6 flex justify-center">
+            <img
+              src="images/woman-min.jpg"
+              class="w-32 rounded-full shadow-lg dark:shadow-black/20"
+            />
+          </div>
+          <h4 class="mb-2 text-lg font-bold">Carla Ferreira</h4>
+          <!-- <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+            Web Developer
+          </h6> -->
+
+          <p class="mb-4">
+            A transformação da minha cozinha foi incrível! Desde a escolha dos
+            materiais até à execução impecável, a equipe demonstrou
+            profissionalismo. A minha nova cozinha é agora o coração acolhedor
+            da minha casa.
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 96 960 960"
+              class="inline-block w-6"
+            >
+              <path
+                fill="currentColor"
+                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z"
+              />
+            </svg>
+          </p>
+          <ul class="mb-0 flex justify-center">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m480 757 157 95-42-178 138-120-182-16-71-168v387ZM233 976l65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="mb-12 md:mb-0">
+          <div class="mb-6 flex justify-center">
+            <img
+              src="images/girl-min.jpg"
+              class="w-32 rounded-full shadow-lg dark:shadow-black/20"
+            />
+          </div>
+          <h4 class="mb-2 text-lg font-bold">Stephanie Dubois</h4>
+          <!-- <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+            Graphic Designer
+          </h6> -->
+          <p class="mb-4">
+            A renovação da minha casa de banho foi um investimento que valeu a
+            pena. Cada elemento, desde a banheira até aos armários, reflete
+            qualidade e estilo. Estou extremamente satisfeito com o resultado
+            final.
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 96 960 960"
+              class="inline-block w-6"
+            >
+              <path
+                fill="currentColor"
+                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z"
+              />
+            </svg>
+          </p>
+          <ul class="mb-0 flex justify-center">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="mb-0">
+          <div class="mb-6 flex justify-center">
+            <img
+              src="images/guy-min.jpg"
+              class="w-32 rounded-full shadow-lg dark:shadow-black/20"
+            />
+          </div>
+          <h4 class="mb-2 text-lg font-bold">Jean Pierre Antunes</h4>
+          <!-- <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+            Marketing Specialist
+          </h6> -->
+          <p class="mb-4">
+            A equipe fez um trabalho incrível na minha sala! Desde a disposição
+            dos móveis até à seleção de tecidos, tudo foi pensado para criar uma
+            atmosfera convidativa. Recomendo a todos que buscam um design de
+            interiores de alta qualidade.
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 96 960 960"
+              class="inline-block w-6"
+            >
+              <path
+                fill="currentColor"
+                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z"
+              />
+            </svg>
+          </p>
+          <ul class="mb-0 flex justify-center">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+                class="w-5 text-amber-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="m323 851 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178Zm-90 125 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-355Z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- map -->
+    <section
+      id="onde-estamos"
+      class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0 text-center"
+    >
+      <h2
+        class="justify-center mb-20 text-4xl text-center uppercase md:text-left md:text-5xl"
+      >
+        Onde estamos
+      </h2>
+      <div
+        class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:justify-center md:space-x-8 items-center"
+      >
+        <img src="images/europe.png" alt="" />
+
+        <ul class="text-lg font-medium">
+          <li class="flex items-center">
+            <span class="mr-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-green-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg> </span
+            >Portugal
+          </li>
+          <li class="flex items-center">
+            <span class="mr-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-green-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg> </span
+            >France
+          </li>
+          <li class="flex items-center">
+            <span class="mr-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-green-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg> </span
+            >Espa&#241;a
+          </li>
+          <li class="flex items-center">
+            <span class="mr-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-green-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg> </span
+            >Luxembourg
+          </li>
+          <li class="flex items-center">
+            <span class="mr-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-green-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg> </span
+            >Belgique
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="bg-black" id="contato">
+      <!-- Container -->
+      <div class="container max-w-6xl py-10 mx-auto">
+        <!-- Footer Flex Container -->
+        <div
+          class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start"
+        >
+          <!-- Menu & Logo Container -->
+          <div
+            class="flex flex-col items-center space-y-8 md:items-start md:space-y-4"
+          >
+            <!-- Logo -->
+            <!-- <div class="h-8"> -->
+            <div class="flex flex-col">
+              <h4 class="text-2xl text-white font-bold">LastMobiliario</h4>
+              <p class="text-white">Home Decor & Interior Design</p>
+            </div>
+
+            <!-- Menu Container -->
+          </div>
+          <div class="text-white mt-4">
+            <a
+              href="tel:0035196000012"
+              class="flex items-center duration-150 hover:text-amber-300"
+            >
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg> </span
+              >PT. (+351) 96 000 012
+            </a>
+            <a
+              href="tel:00330660950002"
+              class="flex items-center duration-150 hover:text-amber-300"
+            >
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg> </span
+              >FR. (+33)(0) 660 950 002
+            </a>
+            <a
+              href="mailto: lastmoveis@gmail.com"
+              class="flex items-center duration-150 hover:text-amber-300"
+            >
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+                  />
+                </svg> </span
+              >lastmoveis@gmail.com
+            </a>
+          </div>
+          <!-- Social & Copy Container -->
+          <div
+            class="flex flex-col items-start justify-between space-y-4 text-gray-500"
+          >
+            <!-- icons Container -->
+            <div
+              class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0"
+            >
+              <!-- Icon 1 -->
+              <div class="h-8 group">
+                <a href="https://www.facebook.com/lastmobiliariio/">
+                  <img
+                    src="images/icon-facebook.svg"
+                    alt=""
+                    class="h-6 hover:scale-110"
+                  />
+                </a>
+              </div>
+              <!-- Icon 2 -->
+              <div class="h-8 group">
+                <a
+                  href="https://www.linkedin.com/in/last-mobili%C3%A1rio-8628601b4/"
+                >
+                  <img
+                    src="images/logo-linkedin.svg"
+                    alt=""
+                    class="h-6 hover:scale-110"
+                  />
+                </a>
+              </div>
+              <div class="h-8 group">
+                <a href="https://www.tiktok.com/@lastmobiliario?lang=pt-BR">
+                  <img
+                    src="images/logo-tiktok.svg"
+                    alt=""
+                    class="h-6 hover:scale-110"
+                  />
+                </a>
+              </div>
+              <!-- Icon 3 -->
+              <div class="h-8 group">
+                <a href="https://www.pinterest.pt/lastmobiliario/">
+                  <img
+                    src="images/icon-pinterest.svg"
+                    alt=""
+                    class="h-6 hover:scale-110"
+                  />
+                </a>
+              </div>
+              <!-- Icon 4 -->
+              <div class="h-8 group">
+                <a href="https://www.instagram.com/lastmobiliario/">
+                  <img
+                    src="images/icon-instagram.svg"
+                    alt=""
+                    class="h-6 hover:scale-110"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Copy -->
+            <div class="font-bold">
+              &copy; <span id="year"></span> LastMobiliario. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
